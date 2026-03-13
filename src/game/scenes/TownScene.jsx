@@ -8,6 +8,7 @@ import Fence from '../world/Fence'
 import Lamp from '../world/Lamp'
 import AnimalController from '../animals/AnimalController'
 import { FlowerPatch } from '../world/FlowerPatch'
+import { EdgeBlocks } from '../world/EdgeBlocks'
 
 const TREE_POSITIONS = [
   [-8, 0, -7], [-10, 0, -3], [8, 0, -6], [10, 0, -1],
@@ -71,6 +72,9 @@ export default function TownScene() {
 
       {/* Animals */}
       <AnimalController />
+
+      {/* ── EDGE GRASS BLOCKS ── */}
+      <EdgeBlocks />
 
       {/* ── FLOWER PATCHES ── */}
       <FlowerPatch position={[2, 0, 8]} count={5} spread={0.7} />
